@@ -82,7 +82,7 @@ int main()
         cout << "\nUH OH!!!!!!!! You are outside of limits. Recalculating...\n";
         double fuel_adjustment = 0.0;
         double precision=0.01;
-        while (total_weight > max_weight || (total_moment/total_weight) < fwd_CG_lim || (total_moment/total_weight) > aft_CG_lim) 
+        while (total_weight > max_weight || (total_moment/total_weight) < fwd_CG_lim || (total_moment/total_weight) > aft_CG_lim) // determines what to subtract to get within limits
         {
             if (total_weight > max_weight) {
             total_weight -= 0.01;
